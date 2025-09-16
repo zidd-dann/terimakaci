@@ -16,7 +16,7 @@
             padding: 0;
             margin: 0;
             box-sizing: border-box;
-            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
 
         :root {
@@ -266,6 +266,27 @@
             animation: flower-fall-down-purple 6s 1.2s linear forwards, flower-falling 6s 7.2s linear infinite;
         }
 
+        .text {
+            align-items: center;
+            bottom: 400px;
+            color: aquamarine;
+            animation: jedagJedug 1.3s infinite;
+        }
+
+        @keyframes jedagJedug {
+            0% {
+                font-size: 28px;
+            }
+
+            50% {
+                font-size: 36px;
+            }
+
+            100% {
+                font-size: 28px;
+            }
+        }
+
         @keyframes open-flower {
             0% {
                 transform: translateX(-50%) rotate(0);
@@ -359,21 +380,22 @@
             }
         }
 
-        .text {
-            position: absolute;
-            bottom: 400px;
-            color: aquamarine;
-            padding-bottom: 50px;
+        .p {
+            display: none;
         }
 
-        /* .p {
-          display: none;
-        } */
+        .tulisan {
+            /* border: 2px solid red; */
+            position: absolute;
+            top: 7cqmax;
+        }
     </style>
-    <audio autoplay>
-        <src="123.mp3" />
-    </audio>
-    <h2 class="text">TERIMAKASIH..</h2>
+    <div class="tulisan">
+        <h2 class="text">TERIMAKASIH..</h2>
+        <audio class="p" autoplay>
+            <source src="123.mp3">
+        </audio>
+    </div>
     <div class="flower">
         <div class="flower-pp">
             <div class="flower_l"></div>
@@ -419,6 +441,5 @@
         <div class="flower__glass"></div>
     </div>
 </body>
-
 
 </html>
